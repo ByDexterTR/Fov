@@ -96,6 +96,7 @@ public Action Command_FovReset(int client, int args)
 		return Plugin_Handled;
 	}
 	
+	fov.Set(client, "90");
 	ResetFov(client);
 	return Plugin_Handled;
 }
